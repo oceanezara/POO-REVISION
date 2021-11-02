@@ -62,6 +62,6 @@
         public function calculateAge(){
             $today = date("Y-m-d");
             $diff = date_diff(date_create($this->DoB), date_create($today));
-            echo 'Age is : ' .$diff->format('%y');
+            return 'Age is :' .$diff->format('%y');
         }
     }
